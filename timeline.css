@@ -54,14 +54,18 @@
   max-width: none;
 }
 
-.timeline .timeline-entry * {
-  transition: opacity 0.25s ease-in-out;
-}
+@media screen {
 
-.timeline:hover .timeline-entry * {
-  opacity: 0.5;
-}
+  .timeline .timeline-entry * {
+    transition: opacity 0.25s ease-in-out;
+  }
 
-.timeline .timeline-entry:hover * {
-  opacity: 1;
+  .timeline:hover .timeline-entry * {
+    opacity: 0.5;
+  }
+
+  .timeline .timeline-entry:hover * {
+    opacity: 1;
+  }
+
 }
