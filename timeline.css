@@ -6,6 +6,7 @@
 
 .timeline-entry {
   position: relative;
+  overflow: hidden;
 }
 
 .timeline-entry-date {
