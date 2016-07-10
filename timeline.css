@@ -1,7 +1,7 @@
 .timeline {
   list-style: none;
   position: relative;
-  padding-left: 2em;
+  padding-left: 0;
 }
 
 .timeline-entry {
