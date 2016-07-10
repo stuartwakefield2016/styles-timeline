@@ -62,7 +62,11 @@
 @media screen {
 
   .timeline .timeline-entry * {
-    transition: opacity 0.25s ease-in-out;
+    transition: opacity 0.25s linear;
+  }
+
+  .timeline .timeline-entry a {
+    transition: opacity 0.25s linear, color 0.25s linear;
   }
 
   .timeline:hover .timeline-entry * {
