@@ -6,7 +6,6 @@
 
 .timeline-entry {
   position: relative;
-  overflow: hidden;
 }
 
 .timeline-entry-date {
@@ -77,4 +76,35 @@
     opacity: 1;
   }
 
+}
+
+.timeline-entry::after,
+.timeline-entry::before {
+  content: "";
+  position: absolute;
+}
+
+.timeline-entry::before {
+  top: 1em;
+  width: 0.25em;
+  left: 0.8725em;
+  background: #B3B1A4;
+  height: 100%;
+}
+
+.timeline-entry::after {
+  width: 2em;
+  height: 2em;
+  background: url("images/item.svg") no-repeat center;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.timeline-entry {
+    padding: 0 0 1em 3em;
+}
+
+.timeline-entry:last-child::before {
+  display: none;
 }
