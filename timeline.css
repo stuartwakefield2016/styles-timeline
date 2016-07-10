@@ -31,6 +31,10 @@
   border-bottom: 0;
 }
 
+.timeline-entry-company a::after {
+  bottom: 0.3333em;
+}
+
 .timeline-entry-position {
   font-size: 1.25em;
   line-height: 2;
