@@ -99,6 +99,12 @@
   left: 0;
   top: 0;
   z-index: 1;
+  animation: timeline-spin 2s linear infinite;
+  transition: background 0.25s linear;
+}
+
+.timeline-entry:hover::after {
+  background: url("images/item-hover.svg") no-repeat center;
 }
 
 .timeline-entry {
@@ -107,4 +113,14 @@
 
 .timeline-entry:last-child::before {
   display: none;
+}
+
+@keyframes timeline-spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }

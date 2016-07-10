@@ -1,23 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 219.99 193.73">
   <defs>
     <style>
-      .a, .b {
-        fill: #FFFFFF;
+      .a {
+        fill: #fff;
       }
 
       .b {
-        stroke: #B3B1A4;
-        stroke-miterlimit: 10;
-        stroke-width: 6px;
+        fill: #FCC453;
       }
 
       .c {
-        fill: #FC735C;
+        fill: #0F233E;
       }
     </style>
   </defs>
-  <title>item</title>
-  <circle class="a" cx="80" cy="80" r="80"/>
-  <path class="b" d="M38.88,138.81L8.3,85.86a12,12,0,0,1,0-12l30.57-53a12,12,0,0,1,10.39-6h61.14a12,12,0,0,1,10.39,6l30.57,53a12,12,0,0,1,0,12l-30.57,53a12,12,0,0,1-10.39,6H49.27A12,12,0,0,1,38.88,138.81Z" transform="translate(0 0)"/>
-  <circle class="c" cx="79.84" cy="79.86" r="50"/>
+  <title>item-hover</title>
+  <path class="a" d="M20.45,170.73l-49-84.86a12,12,0,0,1,0-12L20.45-11a12,12,0,0,1,10.39-6h98a12,12,0,0,1,10.39,6l49,84.86a12,12,0,0,1,0,12l-49,84.86a12,12,0,0,1-10.39,6h-98A12,12,0,0,1,20.45,170.73Z" transform="translate(30.15 17)"/>
+  <circle class="a" cx="110.15" cy="97" r="80"/>
+  <path class="b" d="M35.56,144.56L1.66,85.86a12,12,0,0,1,0-12l33.89-58.7a12,12,0,0,1,10.39-6h67.78a12,12,0,0,1,10.39,6L158,73.86a12,12,0,0,1,0,12l-33.89,58.7a12,12,0,0,1-10.39,6H45.95A12,12,0,0,1,35.56,144.56Z" transform="translate(30.15 17)"/>
+  <circle class="c" cx="109.99" cy="96.86" r="50"/>
 </svg>
