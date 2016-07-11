@@ -1,5 +1,5 @@
 {
-  "name": "stuartwakefield-v2016-styles-timeline",
+  "name": "stuartwakefield2016-styles-timeline",
   "authors": [
     "Stuart Wakefield <me@stuartwakefield.co.uk>"
   ],
@@ -19,6 +19,6 @@
     "tests"
   ],
   "dependencies": {
-    "stuartwakefield-v2016-styles-base": "../stuartwakefield-v2016-styles-base"
+    "stuartwakefield2016-styles-base": "~0.1.0"
   }
 }
