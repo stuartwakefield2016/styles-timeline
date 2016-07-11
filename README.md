@@ -6,6 +6,12 @@ Usage:
 bower install --save stuartwakefield2016-styles-timeline
 ```
 
+Then add the stylesheet to your HTML / build:
+
+```
+bower_components/stuartwakefield2016-styles-timeline/timeline.css
+```
+
 The structure of the timeline fragment expected is as follows:
 
 ```html
