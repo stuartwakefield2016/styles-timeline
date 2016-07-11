@@ -4,11 +4,11 @@
   padding-left: 0;
 }
 
-.timeline-entry {
+.timeline > li {
   position: relative;
 }
 
-.timeline-entry-date {
+.timeline > li > span:first-child {
   color: #FC735C;
   float: right;
   font-style: italic;
@@ -16,7 +16,7 @@
   padding-left: 0.5em;
 }
 
-.timeline-entry-company {
+.timeline > li > h3 {
   color: #FC735C;
   font-weight: normal;
   font-size: 1.25em;
@@ -26,15 +26,11 @@
   text-overflow: ellipsis;
 }
 
-.timeline-entry-company a {
-  border-bottom: 0;
-}
-
-.timeline-entry-company a::after {
+.timeline > li > h3 > a::after {
   bottom: 0.3333em;
 }
 
-.timeline-entry-position {
+.timeline > li > h2 {
   font-size: 1.25em;
   line-height: 2;
   margin: 0;
@@ -43,48 +39,29 @@
   overflow: hidden;
 }
 
-.timeline-entry h2,
-.timeline-entry h3 {
+.timeline > li > h2,
+.timeline > li > h3 {
   margin: 0;
   padding: 0;
   max-width: none;
   text-align: left;
 }
 
-.timeline-entry p {
-  margin: 0;
+.timeline > li > h3 + p {
+  margin-top: 0;
+}
+
+.timeline > li > p {
   padding: 0;
-  margin-bottom: 2em;
-  max-width: none;
 }
 
-@media screen {
-
-  .timeline .timeline-entry * {
-    transition: opacity 0.25s linear;
-  }
-
-  .timeline .timeline-entry a {
-    transition: opacity 0.25s linear, color 0.25s linear;
-  }
-
-  .timeline:hover .timeline-entry * {
-    opacity: 0.5;
-  }
-
-  .timeline .timeline-entry:hover * {
-    opacity: 1;
-  }
-
-}
-
-.timeline-entry::after,
-.timeline-entry::before {
+.timeline > li::after,
+.timeline > li::before {
   content: "";
   position: absolute;
 }
 
-.timeline-entry::before {
+.timeline > li::before {
   top: 1em;
   width: 0.25em;
   left: 0.8725em;
@@ -92,7 +69,7 @@
   height: 100%;
 }
 
-.timeline-entry::after {
+.timeline > li::after {
   width: 2em;
   height: 2em;
   background: url("images/item.svg") no-repeat center;
@@ -103,15 +80,15 @@
   transition: background 0.25s linear;
 }
 
-.timeline-entry:hover::after {
+.timeline > li:hover::after {
   background: url("images/item-hover.svg") no-repeat center;
 }
 
-.timeline-entry {
+.timeline > li {
     padding: 0 0 1em 3em;
 }
 
-.timeline-entry:last-child::before {
+.timeline > li:last-child::before {
   display: none;
 }
 
@@ -123,4 +100,20 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media screen {
+
+  .timeline > li > * {
+    transition: opacity 0.25s linear;
+  }
+
+  .timeline:hover > li > * {
+    opacity: 0.5;
+  }
+
+  .timeline > li:hover > * {
+    opacity: 1;
+  }
+
 }
