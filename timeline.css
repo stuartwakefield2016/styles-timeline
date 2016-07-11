@@ -6,6 +6,7 @@
 
 .timeline > li {
   position: relative;
+  padding: 0 0 1em 3em;
 }
 
 .timeline > li > span:first-child {
@@ -76,16 +77,6 @@
   left: 0;
   top: 0;
   z-index: 1;
-  animation: timeline-spin 2s linear infinite;
-  transition: background 0.25s linear;
-}
-
-.timeline > li:hover::after {
-  background: url("images/item-hover.svg") no-repeat center;
-}
-
-.timeline > li {
-    padding: 0 0 1em 3em;
 }
 
 .timeline > li:last-child::before {
@@ -93,6 +84,7 @@
 }
 
 @keyframes timeline-spin {
+
   0% {
     transform: rotate(0);
   }
@@ -100,6 +92,7 @@
   100% {
     transform: rotate(360deg);
   }
+
 }
 
 @media screen {
@@ -114,6 +107,15 @@
 
   .timeline > li:hover > * {
     opacity: 1;
+  }
+
+  .timeline > li::after {
+    animation: timeline-spin 2s linear infinite;
+    transition: background 0.25s linear;
+  }
+
+  .timeline > li:hover::after {
+    background: url("images/item-hover.svg") no-repeat center;
   }
 
 }
