@@ -13,7 +13,7 @@
   color: #FC735C;
   float: right;
   font-style: italic;
-  line-height: 2.5;
+  line-height: 2;
   padding-left: 0.5em;
 }
 
@@ -21,19 +21,20 @@
   color: #FC735C;
   font-weight: normal;
   font-size: 1.25em;
-  line-height: 2;
+  line-height: 1.6;
   margin: 0;
+  margin-top: -0.25em;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .timeline > li > h3 > a::after {
-  bottom: 0.3333em;
+  bottom: 0.1666em;
 }
 
 .timeline > li > h2 {
   font-size: 1.25em;
-  line-height: 2;
+  line-height: 1.6;
   margin: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -42,18 +43,18 @@
 
 .timeline > li > h2,
 .timeline > li > h3 {
-  margin: 0;
   padding: 0;
   max-width: none;
   text-align: left;
 }
 
 .timeline > li > h3 + p {
-  margin-top: 0;
+  margin-top: 0.25em;
 }
 
 .timeline > li > p {
   padding: 0;
+  margin: 1em 0;
 }
 
 .timeline > li::after,
